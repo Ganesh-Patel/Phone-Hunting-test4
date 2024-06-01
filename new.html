@@ -26,11 +26,10 @@
         </section>
         <section class="images">
             <img src="./images/pngwing 2.png" alt="" class="images__item">
-            <img src="./images/pngwing 1.png" alt="" class="images__item">
+            <img src="./images/pngwing 1.png" alt="" class="center_image">
             <img src="./images/pngwing 2.png" alt="" class="images__item">
         </section>
     </header>
-
     <main class="main-container">
         <h1 class="searchphntitle">Search Your Phone</h1>
         <section class="search">
@@ -38,31 +37,33 @@
             <button id="searchbtn" class="btn btn-primary">Search</button>
         </section>
         <section>
-            <div id="loading" class="loading-container hidden">
-                <h1>Searching</h1>
-                <span class="loading-ring"></span>
-            </div>
-
-            <div id="phone-container" class="phone-container"></div>
-        </section>
-        <div id="showALLBtn" class="hidden show-all-btn">
-            <button class="btn btn-primary">Show All</button>
+          <div class="cards-section" id="cards-section">
+            
+          </div>
+        <div class="pre-nxt-btn">
+            <button class="btn" id="prev-btn">Previous</button>
+            <button class="btn" id="next-btn">Next</button>
+            <button class="btn" id="show-all">Show All</button>
         </div>
-        <section>
-            <dialog id="my_modal" class="modal">
-                <form method="dialog" class="modal-box">
-                    <div id="imgContainer" class="img-container"></div>
-                    <h3 id="detailsPhoneName" class="modal-title"></h3>
-                    <h3 id="detailsBrand" class="modal-subtitle"></h3>
-                    <p id="detailsSpec" class="modal-spec"></p>
-                    <p id="releaseDate" class="modal-date"></p>
-
-                    <div class="modal-actions">
-                        <button class="btn btn-danger">Close</button>
-                    </div>
-                </form>
-            </dialog>
         </section>
+
+        <section>
+          
+            <dialog id="my_modal" class="modal">
+              <form method="dialog" class="modal-box">
+                <div id="imgContainer" class="img-container"></div>
+                <h3 id="detailsPhoneName" class="modal-title"></h3>
+                <h3 id="detailsBrand" class="modal-subtitle"></h3>
+                <p id="detailsSpec" class="modal-spec"></p>
+                <p id="releaseDate" class="modal-date"></p>
+      
+                <div class="modal-actions">
+                  <button id="close" class="btn btn-danger close">Close</button>
+                </div>
+              </form>
+            </dialog>
+          </section>
+       
     </main>
 
     <footer class="footer">
@@ -101,7 +102,9 @@
             </div>
         </div>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./new.js">
+      
+    </script>
 </body>
 
 </html>
