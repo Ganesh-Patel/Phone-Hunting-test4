@@ -17,11 +17,14 @@ This project is a Phone Details Viewer web application. It allows users to searc
 - [Live Demo](#) (https://ganesh-patel.github.io/Phone-Hunting-test4/new.html)
 - [GitHub Repository](#) (https://github.com/Ganesh-Patel/Phone-Hunting-test4/)
 
-## Screenshots
+## Overview
 
-![Phone List](screenshots/phone-list.png)
-![Phone Details](screenshots/phone-details.png)
-![Search Functionality](screenshots/search.png)
+<img width="1276" alt="Screenshot 2024-06-02 at 2 08 19 AM" src="https://github.com/Ganesh-Patel/Phone-Hunting-test4/assets/148999574/1b8cad23-d363-4108-970c-1daee233050f">
+<img width="1260" alt="Screenshot 2024-06-02 at 2 08 34 AM" src="https://github.com/Ganesh-Patel/Phone-Hunting-test4/assets/148999574/a74f46a3-3475-41f4-bc77-87c908d5c805">
+<img width="1264" alt="Screenshot 2024-06-02 at 2 08 53 AM" src="https://github.com/Ganesh-Patel/Phone-Hunting-test4/assets/148999574/7bda3beb-caf6-4b36-8aef-f4af5b15a3f5">
+
+
+
 
 ## How to Use
 
@@ -64,19 +67,4 @@ This project is a Phone Details Viewer web application. It allows users to searc
 - **showNextPhones**: Displays the next set of phone data.
 - **showAllPhones**: Displays all available phone data.
 
-## Video Explanation
-
-[Watch the video explanation](#) (Add the link to the video explanation here)
-
-In the video, I demonstrate:
-- How to use the search functionality.
-- Viewing phone details by clicking on phone cards.
-- Navigating through the phone data using "Next" and "Previous" buttons.
-- Viewing all available phone data using the "Show All" button.
-
-## Running the Project Locally
-
-1. Clone the repository:
-   ```sh
-   git clone # (Add the repository URL here)
 
