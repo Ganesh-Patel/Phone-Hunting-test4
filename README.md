@@ -20,8 +20,10 @@ This project is a Phone Details Viewer web application. It allows users to searc
 ## Overview
 
 <img width="1276" alt="Screenshot 2024-06-02 at 2 08 19 AM" src="https://github.com/Ganesh-Patel/Phone-Hunting-test4/assets/148999574/1b8cad23-d363-4108-970c-1daee233050f">
-<img width="1260" alt="Screenshot 2024-06-02 at 2 08 34 AM" src="https://github.com/Ganesh-Patel/Phone-Hunting-test4/assets/148999574/a74f46a3-3475-41f4-bc77-87c908d5c805">
-<img width="1264" alt="Screenshot 2024-06-02 at 2 08 53 AM" src="https://github.com/Ganesh-Patel/Phone-Hunting-test4/assets/148999574/7bda3beb-caf6-4b36-8aef-f4af5b15a3f5">
+<img width="1273" alt="Screenshot 2024-06-02 at 2 12 53 AM" src="https://github.com/Ganesh-Patel/Phone-Hunting-test4/assets/148999574/3148d392-aa35-4bed-91f8-eaaf24aa6351">
+
+<img width="1260" alt="Screenshot 2024-06-02 at 2 12 25 AM" src="https://github.com/Ganesh-Patel/Phone-Hunting-test4/assets/148999574/6aa830ff-8ae9-431a-8048-37fcd0df3aa4">
+
 
 
 
