@@ -1,5 +1,8 @@
 # Phone Details Viewer
 
+- [1] [Live Demo](https://ganesh-patel.github.io/Phone-Hunting-test4/new.html)
+- [2] [GitHub Repository](https://github.com/Ganesh-Patel/Phone-Hunting-test4/)
+
 ## Overview
 
 The Phone Details Viewer is a web application designed to display detailed information about various phones. It allows users to search for phones, view detailed information by clicking on phone cards, and navigate through the available phone data using pagination. Additionally, users can view all available phone data at once.
@@ -114,15 +117,6 @@ Displays all available phone data.
 2. **View Details**: Click on a phone card to view detailed information about the phone.
 3. **Pagination**: Use the "Next" and "Previous" buttons to navigate through the phone data.
 4. **Show All**: Click the "Show All" button to view all available phones and their details.
-
-## References
-
-- [1] [Live Demo](#) (https://ganesh-patel.github.io/Phone-Hunting-test4/new.html)
-- [2] [GitHub Repository](#) (https://github.com/Ganesh-Patel/Phone-Hunting-test4/)
-- [3] [Stack Overflow](https://stackoverflow.com/questions/41758419/test-javascript-in-mobile-browser)
-- [4] [YouTube Tutorial](https://www.youtube.com/watch?v=uRYHX4EwYYA)
-- [5] [FreeCodeCamp Forum](https://forum.freecodecamp.org/t/whats-a-simple-way-to-test-code-written-locally-for-mobile-devices/96890)
-- [6] [BrowserStack Guide](https://www.browserstack.com/guide/how-to-test-javascript-in-browsers)
 
 ## License
 
