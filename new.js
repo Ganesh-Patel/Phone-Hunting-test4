@@ -111,6 +111,7 @@ function hideModal() {
     document.body.style.overflow = 'auto';
 }
 
+// Pagination functions
 function getPhonesForCurrentPage() {
     const start = currentPage * pageSize;
     const end = start + pageSize;
@@ -121,6 +122,8 @@ function showPreviousPhones() {
     if (currentPage > 0) {
         currentPage--;
         displayPhones(getPhonesForCurrentPage());
+    } else {
+        alert("You are already at the first page.");
     }
 }
 
@@ -128,6 +131,8 @@ function showNextPhones() {
     if ((currentPage + 1) * pageSize < allPhones.length) {
         currentPage++;
         displayPhones(getPhonesForCurrentPage());
+    } else {
+        alert("No more data available.");
     }
 }
 
