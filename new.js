@@ -3,54 +3,41 @@ document.addEventListener('DOMContentLoaded', function() {
         const searchText = document.getElementById('searchField').value;
         fetchPhones(searchText);
     });
-
-    // Adding event listeners for the new buttons
     document.getElementById('prev-btn').addEventListener('click', showPreviousPhones);
     document.getElementById('next-btn').addEventListener('click', showNextPhones);
     document.getElementById('show-all').addEventListener('click', showAllPhones);
 
-    // Load phones from local storage if available
-    const storedPhones = JSON.parse(localStorage.getItem('defaultPhones'));
-    if (storedPhones && storedPhones.length > 0) {
-        allPhones = storedPhones;
-        displayPhones(getPhonesForCurrentPage());
-    } else {
-        fetchDefaultPhones();
-    }
+    fetchAllPhones();
 });
-
 let mymodel = document.getElementById('my_modal');
 let closebtn = document.getElementById('close');
 closebtn.addEventListener('click', hideModal);
 
 let currentPage = 0;
-const pageSize = 8;  // Display at least 7-8 cards
+const pageSize = 8; 
 let allPhones = [];
 
-async function fetchDefaultPhones() {
+async function fetchAllPhones() {
     const categories = ['samsung', 'iphone', 'oppo'];
-    const fetchPromises = categories.map(category => fetch(`https://openapi.programming-hero.com/api/phones?search=${category}`));
-    const responses = await Promise.all(fetchPromises);
-    const dataPromises = responses.map(response => response.json());
-    const results = await Promise.all(dataPromises);
-
-    let phones = [];
-    results.forEach(result => {
-        const categoryPhones = result.data.slice(0, 8); // Adjusting to fetch 7-8 phones per category
-        phones = phones.concat(categoryPhones);
-    });
-
-    phones = shuffleArray(phones);
-    localStorage.setItem('defaultPhones', JSON.stringify(phones));
-    allPhones = phones; // Save all phones for pagination
+    let allFetchedPhones = [];
+    
+    for (let category of categories) {
+        const response = await fetch(`https://openapi.programming-hero.com/api/phones?search=${category}`);
+        const data = await response.json();
+        allFetchedPhones = allFetchedPhones.concat(data.data);
+    }
+    
+    allFetchedPhones = shuffleArray(allFetchedPhones);
+    localStorage.setItem('defaultPhones', JSON.stringify(allFetchedPhones));
+    allPhones = allFetchedPhones; 
     displayPhones(getPhonesForCurrentPage());
 }
 
 async function fetchPhones(searchText) {
     const response = await fetch(`https://openapi.programming-hero.com/api/phones?search=${searchText}`);
     const data = await response.json();
-    allPhones = data.data; // Save all phones for pagination
-    currentPage = 0; // Reset to first page
+    allPhones = data.data; 
+    currentPage = 0; 
     displayPhones(getPhonesForCurrentPage());
 }
 
@@ -115,7 +102,6 @@ const showPhoneDetails = (details) => {
         string = string + `${key}: ${features[key]} \n`;
     }
     detailsSpec.innerText = string;
-    releaseDate.innerText = `${details.releaseDate}`;
     mymodel.style.display = 'block';
     document.body.style.overflow = 'hidden';
 }
@@ -125,7 +111,6 @@ function hideModal() {
     document.body.style.overflow = 'auto';
 }
 
-// Pagination functions
 function getPhonesForCurrentPage() {
     const start = currentPage * pageSize;
     const end = start + pageSize;
@@ -147,5 +132,6 @@ function showNextPhones() {
 }
 
 function showAllPhones() {
+    currentPage = 0;
     displayPhones(allPhones);
 }
