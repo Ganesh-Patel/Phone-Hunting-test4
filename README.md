@@ -9,10 +9,15 @@ The Phone Details Viewer is a web application designed to display detailed infor
 
 <img width="1276" alt="Screenshot 2024-06-02 at 2 08 19 AM" src="https://github.com/Ganesh-Patel/Phone-Hunting-test4/assets/148999574/50cbb3c2-d93c-4c28-8c1e-143bef44f8b7">
 
-<img width="1260" alt="Screenshot 2024-06-02 at 2 12 25 AM" src="https://github.com/Ganesh-Patel/Phone-Hunting-test4/assets/148999574/0f8c0996-d29f-46c9-9d4f-d37bcfd4f90e">
+
+
 
 <img width="1273" alt="Screenshot 2024-06-02 at 2 12 53 AM" src="https://github.com/Ganesh-Patel/Phone-Hunting-test4/assets/148999574/f08e8a27-1c8f-42c8-bf59-1a2def566dc4">
 
+
+
+
+<img width="1260" alt="Screenshot 2024-06-02 at 2 12 25 AM" src="https://github.com/Ganesh-Patel/Phone-Hunting-test4/assets/148999574/0f8c0996-d29f-46c9-9d4f-d37bcfd4f90e">
 
 
 
